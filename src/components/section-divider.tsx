@@ -12,4 +12,4 @@ export default function SectionDivider() {
       transition={{ delay: 0.125 }}
     ></motion.div>
   );
-}
+};
