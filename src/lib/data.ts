@@ -6,6 +6,7 @@ import movieImg from '../../public/movie.png';
 import countryImg from '../../public/country.png';
 import ecommerceImg from '../../public/ecommerce.png';
 import musicImg from '../../public/music.png';
+import { ProjectsDataType } from './types';
 
 export const links = [
   {
@@ -61,17 +62,8 @@ export const experiencesData = [
   }
 ] as const;
 
-type projectsDataType = {
-    title: string,
-    description: string,
-    tags: string[],
-    imageUrl: any,
-    github: string,
-    demo?: string
-  }[]
 
-
-export const projectsData: projectsDataType = [
+export const projectsData: ProjectsDataType = [
   {
     title: 'Movies App',
     description:

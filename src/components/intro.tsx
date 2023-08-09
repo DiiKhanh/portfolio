@@ -7,11 +7,17 @@ import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
 import { FaGithubSquare } from 'react-icons/fa';
 import avtImg from '../../public/avt.jpg';
+import { useSectionInView } from '@/lib/hooks';
 
 
 export default function Intro() {
+
+  const { ref } = useSectionInView('Home', 0.5);
+
   return (
-    <section className='mb-28 max-w-[50rem] text-center sm:mb-0'>
+    <section className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-28' id="home"
+      ref={ref}
+    >
       <div className='flex items-center justify-center'>
         <div className='relative'>
           <motion.div
@@ -65,7 +71,7 @@ export default function Intro() {
         </a>
         <a
           className='bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border border-black/10'
-          href='https://linkedin.com'
+          href='https://www.linkedin.com/in/ph%E1%BA%A1m-duy-kh%C3%A1nh-740465233'
           target='_blank'
         >
           <BsLinkedin />
@@ -73,7 +79,7 @@ export default function Intro() {
 
         <a
           className='bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10'
-          href='https://github.com'
+          href='https://github.com/diikhanh'
           target='_blank'
         >
           <FaGithubSquare />

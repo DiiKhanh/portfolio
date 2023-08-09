@@ -4,14 +4,20 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import SectionHeading from './section-heading';
 import avtImg from '../../public/avt.jpg';
+import { useSectionInView } from '@/lib/hooks';
 
 export default function About() {
+
+  const { ref } = useSectionInView('About');
+
   return (
-    <motion.section className='mb-28 max-w-[85rem] text-center leading-8 sm:mb-40'
+    <motion.section className='mb-28 max-w-[85rem] text-center leading-8 sm:mb-40 scroll-mt-14'
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
-      id='about'>
+      id='about'
+      ref={ref}
+    >
       <SectionHeading>About me</SectionHeading>
       <div className='grid items-center grid-cols-1 sm:grid-cols-2 gap-2 justify-center'>
         <div className='text-[18px] sm:order-2 w-full text-start'>

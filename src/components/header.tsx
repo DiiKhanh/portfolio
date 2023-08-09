@@ -2,8 +2,14 @@
 import { motion } from 'framer-motion';
 import { links } from '@/lib/data';
 import Link from 'next/link';
+import { useAppDispatch, useAppSelector } from '@/redux/hooks';
+import { setActiveSection, setIsClick } from '@/redux/features/activeSectionSlice';
 
 export default function Header() {
+  const dispatch = useAppDispatch();
+  const activeSection = useAppSelector(state => state.activeSectionReducer.activeSection);
+
+
   return (
     <header className='z-[999] relative'>
       <motion.div className='fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full'
@@ -19,7 +25,25 @@ export default function Header() {
                 key={link.hash}
                 initial={{ y: -100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}>
-                <Link href={link.hash} className='flex w-full items-center justify-center p-3 hover:text-gray-950 transition'>{link.name}</Link>
+                <Link href={link.hash} className={`flex w-full items-center justify-center p-3 hover:text-gray-950 transition ${activeSection === link.name ? 'text-gray-950' : null}`}
+                  onClick={() => {
+                    dispatch(setActiveSection(link.name));
+                    dispatch(setIsClick(Date.now()));
+                  }}
+                >{link.name}
+                  {
+                    activeSection === link.name && (
+                      <motion.span className='absolute bg-gray-200 rounded-full -z-10 inset-0'
+                        layoutId='activeSection'
+                        transition={{
+                          type: 'spring',
+                          stiffness: 380,
+                          damping: 30
+                        }}
+                      ></motion.span>
+                    )
+                  }
+                </Link>
               </motion.li>
             ))
           }
