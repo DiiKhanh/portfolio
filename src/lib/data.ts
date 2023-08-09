@@ -5,6 +5,7 @@ import { LuGraduationCap } from 'react-icons/lu';
 import movieImg from '../../public/movie.png';
 import countryImg from '../../public/country.png';
 import ecommerceImg from '../../public/ecommerce.png';
+import musicImg from '../../public/music.png';
 
 export const links = [
   {
@@ -60,29 +61,52 @@ export const experiencesData = [
   }
 ] as const;
 
-export const projectsData = [
+type projectsDataType = {
+    title: string,
+    description: string,
+    tags: string[],
+    imageUrl: any,
+    github: string,
+    demo?: string
+  }[]
+
+
+export const projectsData: projectsDataType = [
   {
     title: 'Movies App',
     description:
-      '',
-    tags: ['React', 'JS', 'MongoDB', 'Material UI', 'Node', 'Express', 'Redux'],
-    imageUrl: movieImg
+      'Fullstack Responsive Movie Website with MERN stack and Themoviedb',
+    tags: ['React', 'MongoDB', 'Material UI', 'Express', 'Redux Toolkit'],
+    imageUrl: movieImg,
+    github: 'https://github.com/DiiKhanh/mern-movies-app',
+    demo: 'https://mern-movies-app.vercel.app/'
   },
   {
     title: 'Country App',
     description:
-      '',
-    tags: ['React', 'JS', 'Tailwind', 'Redux'],
-    imageUrl: countryImg
+      'Website find country with dark/light mode',
+    tags: ['React', 'Tailwind', 'Redux Toolkit'],
+    imageUrl: countryImg,
+    github: 'https://github.com/DiiKhanh/mern-movies-app'
   },
   {
-    title: 'ecommerce sneaker',
+    title: 'Ecommerce sneaker',
     description:
-      '',
-    tags: ['React', 'SQL', 'Java Spring Boot', 'Framer'],
-    imageUrl: ecommerceImg
+      'My project in the subject of system analysis, design and information management',
+    tags: ['React', 'SQL', 'Java Spring Boot', 'Redux Toolkit'],
+    imageUrl: ecommerceImg,
+    github: 'https://github.com/DiiKhanh/mern-movies-app'
+  },
+  {
+    title: 'Music App',
+    description:
+      'Develop an elegant React.js Music Application',
+    tags: ['React', 'API', 'Redux Toolkit', 'Tailwind', 'RTK-Query'],
+    imageUrl: musicImg,
+    github: 'https://github.com/DiiKhanh/reactjs-tailwind-clone-music-app',
+    demo: 'https://reactjs-tailwind-clone-music-app.vercel.app/'
   }
-] as const;
+] ;
 
 export const skillsData = [
   'HTML',

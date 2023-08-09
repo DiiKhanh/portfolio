@@ -14,32 +14,17 @@ export default function About() {
       id='about'>
       <SectionHeading>About me</SectionHeading>
       <div className='grid items-center grid-cols-1 sm:grid-cols-2 gap-2 justify-center'>
-        <div className='text-[18px] sm:order-2 w-full'>
-          <h6>My name is Pham Duy Khanh</h6>
+        <div className='text-[18px] sm:order-2 w-full text-start'>
+          <h6>Hi there! My name is <span className='font-bold underline'>Pham Duy Khanh</span>, a <span className='font-medium'>third-year student majoring in Information Systems at the University of Information Technology - Vietnam National University Ho Chi Minh City.</span></h6>
           <p className='mb-3'>
-        After graduating with a degree in{' '}
-            <span className='font-medium'>Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{' '}
-            <span className='font-medium'>full-stack web development</span>.{' '}
-            <span className='italic'>My favorite part of programming</span> is the
-        problem-solving aspect. I <span className='underline'>love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{' '}
-            <span className='font-medium'>
-          React, Next.js, Node.js, and MongoDB
+            I have a strong passion for technology and a desire to become a skilled developer. <span className='underline font-medium'>My journey in the world of IT started with a fascination for both frontend and backend development, and I have acquired a solid foundation in these areas.</span>
+            As I progress through my studies, I am excited to delve deeper into various aspects of software development. <span className='font-bold'>🎯My goal is to become a Fullstack Web Developer</span>, capable of working on both the user-facing frontend and the server-side backend of applications.{' '}
+            <span className='italic font-medium'>
+            In addition to my interest in web development, I am also venturing into the realm of mobile app development. I believe that understanding the intricacies of mobile platforms will enable me to create versatile and well-rounded applications that cater to a wider audience.
             </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{' '}
-            <span className='font-medium'>full-time position</span> as a software
-        developer.
-          </p>
-          <p>
-            <span className='italic'>When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{' '}
-            <span className='font-medium'>learning new things</span>. I am currently
-        learning about{' '}
-            <span className='font-medium'>history and philosophy</span>. I'm also
-        learning how to play the guitar.
+            <span>
+            Overall, my academic journey has been filled with challenges and opportunities, and I am dedicated to continuous learning and growth in the ever-evolving field of technology. <span className='font-bold'>Thank you for taking the time to get to know a little bit about me!</span>
+            </span>
           </p>
         </div>
         <div className='mx-auto sm:order-1'>
