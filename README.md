@@ -1,5 +1,9 @@
-#My portfolio
-[Demo](https://dk-portfolio-gamma.vercel.app/)
+# This is my personal website
+## Technology
+-    TypeScript, NextJS, Resend
+-    TailwindCSS, Framer-Motion
+## Demo of this site available here: 
+[Demo](https://dk-portfolio-gamma.vercel.app/)<br/>
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
