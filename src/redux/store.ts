@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 import activeSectionReducer from './features/activeSectionSlice';
+import themeReducer from './features/themeSlice';
 
 export const store = configureStore({
   reducer: {
-    activeSectionReducer
+    activeSectionReducer,
+    themeReducer
   },
   devTools: process.env.NODE_ENV !== 'production'
 });
