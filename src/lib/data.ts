@@ -6,7 +6,39 @@ import movieImg from '../../public/movie.png';
 import countryImg from '../../public/country.png';
 import ecommerceImg from '../../public/ecommerce.png';
 import musicImg from '../../public/music.png';
-import { ProjectsDataType } from './types';
+import { ProjectsDataType, SkillProps } from './types';
+
+import htmlImg from '../../public/skills/frontend/html.png';
+import cssImg from '../../public/skills/frontend/css.png';
+import reactImg from '../../public/skills/frontend/react.png';
+import reduxImg from '../../public/skills/frontend/redux.png';
+import tailwindImg from '../../public/skills/frontend/tailwind.png';
+import viteImg from '../../public/skills/frontend/vite.png';
+import nextImg from '../../public/skills/frontend/next.png';
+import muiImg from '../../public/skills/frontend/mui.png';
+
+import nodeImg from '../../public/skills/backend/node.png';
+import expressImg from '../../public/skills/backend/express.png';
+import springImg from '../../public/skills/backend/Spring.png';
+import sqlImg from '../../public/skills/backend/sqlserver.png';
+import oracleImg from '../../public/skills/backend/Oracle.png';
+import mogoImg from '../../public/skills/backend/mongo.jpeg';
+import mysqlImg from '../../public/skills/backend/mysql.png';
+
+import cppImg from '../../public/skills/languages/CPP.png';
+import javaImg from '../../public/skills/languages/Java.png';
+import jsImg from '../../public/skills/languages/JS.png';
+import tsImg from '../../public/skills/languages/TS.png';
+import dartImg from '../../public/skills/languages/Dart.png';
+
+import gitImg from '../../public/skills/tool/git.png';
+import githubImg from '../../public/skills/tool/github.png';
+import vscImg from '../../public/skills/tool/vscode.png';
+import npmImg from '../../public/skills/tool/npm.png';
+import yarnImg from '../../public/skills/tool/yarn.png';
+import postImg from '../../public/skills/tool/postman.png';
+import starImg from '../../public/skills/tool/staruml.png';
+import inteliImg from '../../public/skills/tool/IntelliJ_IDEA_icon.png';
 
 export const links = [
   {
@@ -100,19 +132,143 @@ export const projectsData: ProjectsDataType = [
   }
 ] ;
 
-export const skillsData = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'TypeScript',
-  'React',
-  'Next.js',
-  'Node.js',
-  'Git',
-  'Tailwind',
-  'Java',
-  'MongoDB',
-  'Redux',
-  'Express',
-  'Framer Motion'
-] as const;
+type SkillsDataType = SkillProps['skill'][];
+
+export const skillsData: SkillsDataType = [
+  {
+    id: 1,
+    main: 'Frontend',
+    data: [
+      {
+        title: 'HTML',
+        img: htmlImg
+      },
+      {
+        title: 'CSS',
+        img: cssImg
+      },
+      {
+        title: 'ReactJS',
+        img: reactImg
+      },
+      {
+        title: 'TailwindCSS',
+        img: tailwindImg
+      },
+      {
+        title: 'Material UI',
+        img: muiImg
+      },
+      {
+        title: 'Redux',
+        img: reduxImg
+      },
+      {
+        title: 'NextJS',
+        img: nextImg
+      },
+      {
+        title: 'Vite',
+        img: viteImg
+      }
+    ]
+  },
+  {
+    id: 2,
+    main: 'Backend',
+    data: [
+      {
+        title: 'Node.js',
+        img: nodeImg
+      },
+      {
+        title: 'Express.js',
+        img: expressImg
+      },
+      {
+        title: 'Spring Boot',
+        img: springImg
+      },
+      {
+        title: 'MongoDB',
+        img: mogoImg
+      },
+      {
+        title: 'Oracle',
+        img: oracleImg
+      },
+      {
+        title: 'MySQL',
+        img: mysqlImg
+      },
+      {
+        title: 'SQL Server',
+        img: sqlImg
+      }
+    ]
+  },
+  {
+    id: 3,
+    main: 'Languages',
+    data: [
+      {
+        title: 'C++',
+        img: cppImg
+      },
+      {
+        title: 'Java',
+        img: javaImg
+      },
+      {
+        title: 'JavaScript',
+        img: jsImg
+      },
+      {
+        title: 'TypeScript',
+        img: tsImg
+      },
+      {
+        title: 'Dart',
+        img: dartImg
+      }
+    ]
+  },
+  {
+    id: 4,
+    main: 'Tools',
+    data: [
+      {
+        title: 'VSCode',
+        img: vscImg
+      },
+      {
+        title: 'IntelliJ IDEA',
+        img: inteliImg
+      },
+      {
+        title: 'StarUML',
+        img: starImg
+      },
+      {
+        title: 'Git',
+        img: gitImg
+      },
+      {
+        title: 'Github',
+        img: githubImg
+      },
+      {
+        title: 'Postman',
+        img: postImg
+      },
+      {
+        title: 'NPM',
+        img: npmImg
+      },
+      {
+        title: 'Yarn',
+        img: yarnImg
+      }
+    ]
+  }
+];

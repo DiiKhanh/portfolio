@@ -10,3 +10,14 @@ export type ProjectsDataType = {
 }[];
 
 export type SectionName = (typeof links)[number]['name'];
+
+export type SkillProps = {
+  skill: {
+    id: number,
+    main: string,
+    data: {
+      title: string,
+      img: any
+    }[]
+  }
+};
