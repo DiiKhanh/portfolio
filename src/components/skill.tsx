@@ -34,7 +34,7 @@ export default function Skill({ skill }: SkillProps) {
         {skill.data.map((data, index) => (
           <motion.li
             className='bg-white rounded-xl inline-flex items-center gap-2 justify-start
-            px-[32px] border border-black/10 cursor-pointer font-medium transition
+            px-[32px] borderBlack cursor-pointer font-medium transition
             '
             key={index}
             variants={fadeInAnimationVariants}

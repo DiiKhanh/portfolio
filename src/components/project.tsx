@@ -45,12 +45,12 @@ export default function Project({ title, description, tags, imageUrl, github, de
           </ul>
           <div className='flex sm:mt-auto mt-5 gap-4 items-center justify-start'>
             <a href={github} className='inline-flex font-bold items-center text-base
-            bg-white py-2 px-5 text-gray-700 hover:text-gray-950 gap-2 rounded-xl focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border border-black/10'
+            bg-white py-2 px-5 text-gray-700 hover:text-gray-950 gap-2 rounded-xl focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack'
             target='_blank'
             >Github <FaGithubSquare /></a>
             {
               demo && <a href={demo} className='inline-flex font-bold items-center text-base
-              bg-gray-700 py-2 px-5 text-white hover:bg-gray-950 gap-2 rounded-xl focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border border-black/10'
+              bg-gray-700 py-2 px-5 text-white hover:bg-gray-950 gap-2 rounded-xl focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack'
               target='_blank'
               >Demo <BiLinkExternal /></a>
             }
