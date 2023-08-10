@@ -1,6 +1,6 @@
 import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
-import { FaReact } from 'react-icons/fa';
+import { BsCodeSlash } from 'react-icons/bs';
 import { LuGraduationCap } from 'react-icons/lu';
 import movieImg from '../../public/movie.png';
 import countryImg from '../../public/country.png';
@@ -69,28 +69,28 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: 'Graduated',
-    location: '',
+    title: 'Graduated 🎓',
+    location: 'HCM City, Vietnam',
     description:
-      '',
+      'UIT student, majoring in information systems',
     icon: React.createElement(LuGraduationCap),
-    date: ''
+    date: '2021 - 2025'
   },
   {
     title: 'Front-End Developer',
-    location: '',
+    location: 'Personal',
     description:
-      'I\'ve worked as a front-end developer for 2 years. I also upskilled to the full stack.',
+      'I self-study and learn about Web Developer. I also upskilled to the full stack.',
     icon: React.createElement(CgWorkAlt),
-    date: '2022 - present'
+    date: '2021 - present'
   },
   {
-    title: '',
-    location: '',
+    title: 'Member WebDev Studios',
+    location: 'UIT',
     description:
-      '',
-    icon: React.createElement(FaReact),
-    date: '2021 - present'
+      'Member of the programming team',
+    icon: React.createElement(BsCodeSlash),
+    date: '2023 - present'
   }
 ] as const;
 
