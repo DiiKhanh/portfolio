@@ -6,6 +6,8 @@ import movieImg from '../../public/movie.png';
 import countryImg from '../../public/country.png';
 import ecommerceImg from '../../public/ecommerce.png';
 import musicImg from '../../public/music.png';
+import tulibear from '../../public/tulibear.png';
+import petshop from '../../public/petshop.png';
 import { ProjectsDataType, SkillProps } from './types';
 
 import htmlImg from '../../public/skills/frontend/html.png';
@@ -24,8 +26,10 @@ import sqlImg from '../../public/skills/backend/sqlserver.png';
 import oracleImg from '../../public/skills/backend/Oracle.png';
 import mogoImg from '../../public/skills/backend/mongo.jpeg';
 import mysqlImg from '../../public/skills/backend/mysql.png';
+import net from '../../public/skills/backend/NET.png';
 
 import cppImg from '../../public/skills/languages/CPP.png';
+import csharp from '../../public/skills/languages/CSharp.png';
 import javaImg from '../../public/skills/languages/Java.png';
 import jsImg from '../../public/skills/languages/JS.png';
 import tsImg from '../../public/skills/languages/TS.png';
@@ -106,6 +110,14 @@ export const projectsData: ProjectsDataType = [
     demo: 'https://mern-movies-app.vercel.app/'
   },
   {
+    title: 'PetShop',
+    description:
+      'Chức năng như giỏ hàng, thanh toán online, đặt lịch hẹn, Chatbot, Review. Admin có các chức năng CRUD',
+    tags: ['Sql Server', 'Material UI', 'ASP.NET', 'Redux Toolkit', 'EF'],
+    imageUrl: petshop,
+    github: 'https://github.com/DiiKhanh/Petshop-client'
+  },
+  {
     title: 'Country App',
     description:
       'Website find country with dark/light mode',
@@ -114,7 +126,7 @@ export const projectsData: ProjectsDataType = [
     github: 'https://github.com/DiiKhanh/mern-movies-app'
   },
   {
-    title: 'Ecommerce sneaker',
+    title: 'Ecommerce Sneaker',
     description:
       'My project in the subject of system analysis, design and information management',
     tags: ['React', 'SQL', 'Java Spring Boot', 'Redux Toolkit'],
@@ -129,6 +141,15 @@ export const projectsData: ProjectsDataType = [
     imageUrl: musicImg,
     github: 'https://github.com/DiiKhanh/reactjs-tailwind-clone-music-app',
     demo: 'https://reactjs-tailwind-clone-music-app.vercel.app/'
+  },
+  {
+    title: 'Tulibear',
+    description:
+      'Website đồ án môn thương mại điện tử - UIT',
+    tags: ['React', 'Firebase', 'Zustand', 'Material UI'],
+    imageUrl: tulibear,
+    github: 'https://github.com/DiiKhanh/TuliBear-IS334_O12',
+    demo: 'https://tulibear-is334.vercel.app/'
   }
 ] ;
 
@@ -204,6 +225,10 @@ export const skillsData: SkillsDataType = [
       {
         title: 'SQL Server',
         img: sqlImg
+      },
+      {
+        title: 'ASP.NET',
+        img: net
       }
     ]
   },
@@ -214,6 +239,10 @@ export const skillsData: SkillsDataType = [
       {
         title: 'C++',
         img: cppImg
+      },
+      {
+        title: 'C#',
+        img: csharp
       },
       {
         title: 'Java',
