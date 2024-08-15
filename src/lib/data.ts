@@ -2,6 +2,7 @@ import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
 import { BsCodeSlash } from 'react-icons/bs';
 import { LuGraduationCap } from 'react-icons/lu';
+import { FaLaptopCode } from 'react-icons/fa';
 import movieImg from '../../public/movie.png';
 import countryImg from '../../public/country.png';
 import ecommerceImg from '../../public/ecommerce.png';
@@ -95,6 +96,14 @@ export const experiencesData = [
       'Member of the programming team',
     icon: React.createElement(BsCodeSlash),
     date: '2023 - present'
+  },
+  {
+    title: 'Product Frontend Intern',
+    location: 'GEEK Up',
+    description:
+      'Geek Internship Team (Summer 2024), participate and develop product.',
+    icon: React.createElement(FaLaptopCode),
+    date: '06/2024 - 08/2024'
   }
 ] as const;
 

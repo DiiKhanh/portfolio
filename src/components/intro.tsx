@@ -69,14 +69,16 @@ export default function Intro() {
             dispatch(setIsClick(Date.now()));
           }}
         >
-          Contact me here{' '}<BsArrowRight className='opacity-70 group-hover:translate-x-1 transition' />
+          Contact me here<BsArrowRight className='opacity-70 group-hover:translate-x-1 transition' />
         </Link>
-        <a href='/cv.pdf' className='group px-7 py-3 rounded-full bg-white flex items-center gap-2 outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10'
-          download={true}
+        <Link href='/cv.pdf' className='group px-7 py-3 rounded-full bg-white flex items-center gap-2 outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10'
+          download
+          locale={false}
+          rel="noopener noreferrer"
           target='_blank'
         >
-          Download CV{' '}<HiDownload className='opacity-60 group-hover:translate-y-1 transition' />
-        </a>
+          Download CV<HiDownload className='opacity-60 group-hover:translate-y-1 transition' />
+        </Link>
         <a
           className='bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60'
           href='https://www.linkedin.com/in/ph%E1%BA%A1m-duy-kh%C3%A1nh-740465233'

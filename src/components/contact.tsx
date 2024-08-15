@@ -32,10 +32,10 @@ export default function Contact() {
       <SectionHeading>Contact me</SectionHeading>
 
       <p className='text-gray-700 -mt-6 dark:text-white/80'>
-        Please contact me directly at{' '}
-        <a className='underline' href='mailto:example@gmail.com'>
+        Please contact me directly at
+        <a className='underline mx-1' href='mailto:example@gmail.com'>
         21522211@gm.uit.edu.vn
-        </a>{' '}
+        </a>
         or through this form.
       </p>
 
@@ -67,7 +67,9 @@ export default function Contact() {
           required
           maxLength={5000}
         />
-        <SubmitBtn />
+        <div className='w-full flex items-center justify-center'>
+          <SubmitBtn />
+        </div>
       </form>
     </motion.section>
   );
