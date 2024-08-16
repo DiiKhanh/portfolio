@@ -85,9 +85,9 @@ export const experiencesData = [
     title: 'Front-End Developer',
     location: 'Personal',
     description:
-      'I self-study and learn about Web Developer. I also upskilled to the full stack.',
+      'I self-study and learn about Web Developer. I also upskilled to the full stack',
     icon: React.createElement(CgWorkAlt),
-    date: '2021 - present'
+    date: '2021 - Present'
   },
   {
     title: 'Member WebDev Studios',
@@ -95,15 +95,15 @@ export const experiencesData = [
     description:
       'Member of the programming team',
     icon: React.createElement(BsCodeSlash),
-    date: '2023 - present'
+    date: '2023 - Present'
   },
   {
     title: 'Product Frontend Intern',
     location: 'GEEK Up',
     description:
-      'Geek Internship Team (Summer 2024), participate and develop product.',
+      'Geek Internship Team (Summer 2024), participate and develop product',
     icon: React.createElement(FaLaptopCode),
-    date: '06/2024 - 08/2024'
+    date: 'Jun 2024 - Aug 2024'
   }
 ] as const;
 

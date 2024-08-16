@@ -9,9 +9,7 @@ import { useSectionInView } from '@/lib/hooks';
 export default function Projects() {
   const { ref } = useSectionInView('Projects', 0.1);
   return (
-    <section className='mb-28 scroll-mt-14' id='projects'
-      ref={ref}
-    >
+    <section className='mb-28 scroll-mt-14' id='projects' ref={ref} >
       <SectionHeading>My Projects</SectionHeading>
       <div>
         {

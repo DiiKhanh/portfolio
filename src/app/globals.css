@@ -13,3 +13,11 @@ html.dark {
 .borderBlack {
   @apply border border-black/10;
 }
+
+.vertical-timeline::before {
+  background: #e5e7eb !important;
+}
+
+.dark .vertical-timeline::before {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
