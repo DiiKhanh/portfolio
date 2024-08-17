@@ -6,9 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "i18n:merge": "SKIP_ENV_VALIDATION=true tsx ./scripts/merge-i18n.ts",
-    "postinstall": "yarn i18n:merge"
+    "lint": "next lint"
   },
   "dependencies": {
     "@react-email/components": "^0.0.7",
