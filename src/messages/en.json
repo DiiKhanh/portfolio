@@ -2,5 +2,23 @@
   "metadata": {
     "title": "DiiKhanh | Personal Portfolio",
     "description": "I'm currently 4th year student at UIT, wish to become full-stack developer"
+  },
+  "about": {
+    "title": "About Me"
+  },
+  "projects": {
+    "title": "My Projects"
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "experiences": {
+    "title": "My experience"
+  },
+  "contact": {
+    "title": "Contact Me"
+  },
+  "common": {
+    "submitBtn": "Submit"
   }
 }

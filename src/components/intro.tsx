@@ -18,9 +18,9 @@ export default function Intro() {
   const { ref } = useSectionInView('Home', 0.5);
 
   return (
-    <section className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-28' id="home"
-      ref={ref}
-    >
+    <section
+      className='mb-28 max-w-3xl text-center sm:mb-0 scroll-mt-28' id="home"
+      ref={ref}>
       <div className='flex items-center justify-center'>
         <div className='relative'>
           <motion.div
@@ -54,7 +54,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className='text-xl'>Welcome to my personal website! 🚀</span><br/>
-        <span className='font-bold'>Hello, I'm Duy Khanh.</span> I'm currently in the third year of <span className='font-bold'> Information Systems at the UIT</span>. I enjoy building <span className='italic'>sites & apps</span>. My focus is{' '}<span className='underline'>researched, and learned about <span className='font-bold'>Frontend Development & Backend and Mobile</span></span>.
+        <span className='font-bold'>Hello, I'm Duy Khanh.</span> I'm currently in the 4th year of <span className='font-bold'> Information Systems at the UIT</span>. I enjoy building <span className='italic'>sites & apps</span>. My focus is{' '}<span className='underline'>researched, and learned about <span className='font-bold'>Frontend Development & Backend and Mobile</span></span>.
       </motion.h1>
       <motion.div className='flex flex-col sm:flex-row items-center justify-center gap-4 text-lg font-medium'
         initial={{ opacity: 0, y: 100 }}
@@ -69,7 +69,8 @@ export default function Intro() {
             dispatch(setIsClick(Date.now()));
           }}
         >
-          Contact me here<BsArrowRight className='opacity-70 group-hover:translate-x-1 transition' />
+          Contact me here
+          <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition' />
         </Link>
         <a
           href='https://drive.google.com/file/d/1kNkV1zicqP8sqwQQH03HdqQAqYTdMUQl/view?usp=sharing'

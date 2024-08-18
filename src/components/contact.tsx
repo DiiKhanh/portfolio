@@ -7,9 +7,11 @@ import { useSectionInView } from '@/lib/hooks';
 import { sendEmail } from '@/server/actions/sendEmail';
 import toast from 'react-hot-toast';
 import SubmitBtn from './submit-btn';
+import { useTranslations } from 'next-intl';
 
 export default function Contact() {
   const { ref } = useSectionInView('Contact');
+  const t = useTranslations('contact');
 
   return (
     <motion.section
@@ -29,7 +31,7 @@ export default function Contact() {
         once: true
       }}
     >
-      <SectionHeading>Contact me</SectionHeading>
+      <SectionHeading>{t('title')}</SectionHeading>
 
       <p className='text-gray-700 -mt-6 dark:text-white/80'>
         Please contact me directly at

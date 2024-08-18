@@ -7,13 +7,15 @@ import { experiencesData } from '@/lib/data';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { useAppSelector } from '@/redux/hooks';
+import { useTranslations } from 'next-intl';
 
 export default function Experience() {
   const { ref } = useSectionInView('Experience');
   const theme = useAppSelector(state => state.themeReducer.theme);
+  const t = useTranslations('experiences');
   return (
     <section ref={ref} id='experience' className='scroll-mt-28 mb-28 sm:mb-40'>
-      <SectionHeading>My experience</SectionHeading>
+      <SectionHeading>{t('title')}</SectionHeading>
       <VerticalTimeline lineColor='gray'>
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>

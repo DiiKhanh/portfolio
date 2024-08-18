@@ -45,10 +45,10 @@ const LanguageSwitch: React.FC = () => {
         <div className="absolute left-0 bottom-12 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
           <div className="py-1">
             <span className="block px-4 py-2 text-sm text-gray-700">Language</span>
-            <div className="border-t border-gray-100"></div>
+            <div className="border-t border-gray-100"/>
             <button
               className={`w-full text-left px-4 py-2 text-sm ${
-                locale === 'en' ? 'bg-gray-100' : 'hover:bg-gray-200'
+                locale === 'en' ? 'bg-gray-200' : 'hover:bg-gray-400'
               }`}
               onClick={() => handleLocaleChange('en')}
             >
@@ -56,7 +56,7 @@ const LanguageSwitch: React.FC = () => {
             </button>
             <button
               className={`w-full text-left px-4 py-2 text-sm ${
-                locale === 'vi' ? 'bg-gray-100' : 'hover:bg-gray-200'
+                locale === 'vi' ? 'bg-gray-200' : 'hover:bg-gray-400'
               }`}
               onClick={() => handleLocaleChange('vi')}
             >
