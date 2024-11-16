@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import SectionHeading from './section-heading';
-import avtImg from '../../public/avt.jpg';
+import avtImg from '../../public/avt1.jpg';
 import { useSectionInView } from '@/lib/hooks';
 import { useTranslations } from 'next-intl';
 
@@ -37,7 +37,7 @@ export default function About() {
         </div>
         <div className='mx-auto sm:order-1'>
           <Image loading='lazy' alt='avt' src={avtImg} height={2000} width={2000} quality={100}
-            className='object-cover rounded-lg shadow-lg w-[456px] h-[456px]'
+            className='object-contain rounded-lg shadow-lg w-[456px] h-[456px]'
           />
         </div>
       </div>

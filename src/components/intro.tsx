@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
 import { FaGithubSquare } from 'react-icons/fa';
-import avtImg from '../../public/avt.jpg';
+import avtImg2 from '../../public/avt2.jpg';
 import { useSectionInView } from '@/lib/hooks';
 import { useAppDispatch } from '@/redux/hooks';
 import { setActiveSection, setIsClick } from '@/redux/features/activeSectionSlice';
@@ -31,7 +31,7 @@ export default function Intro() {
               duration: 0.2
             }}
           >
-            <Image src={avtImg} alt='Avatar' height='192' width='192' quality='95'
+            <Image src={avtImg2} alt='Avatar' height='192' width='192' quality='95'
               priority={true} className='h-24 w-24 object-cover rounded-full border-white
               border-[0.35rem] shadow-xl'
             />
@@ -49,12 +49,12 @@ export default function Intro() {
         </div>
       </div>
       <motion.h1
-        className='mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl'
+        className='mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl text-center'
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
         <span className='text-xl'>Welcome to my personal website! 🚀</span><br/>
-        <span className='font-bold'>Hello, I'm Duy Khanh.</span> I'm currently in the 4th year of <span className='font-bold'> Information Systems at the UIT</span>. I enjoy building <span className='italic'>sites & apps</span>. My focus is{' '}<span className='underline'>researched, and learned about <span className='font-bold'>Frontend Development & Backend and Mobile</span></span>.
+        <span className='font-bold'>Hello, I'm Duy Khanh.</span> I'm currently a 4th-year student in <span className='font-bold'>Information Systems at UIT</span>. I enjoy building <span className='italic'>websites and apps</span>. My focus is on <span className='underline'>researching and learning about <span className='font-bold'>Frontend, Backend and Mobile Development</span></span>.
       </motion.h1>
       <motion.div className='flex flex-col sm:flex-row items-center justify-center gap-4 text-lg font-medium'
         initial={{ opacity: 0, y: 100 }}
